@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Barbell Calculator</title>
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="current-weight">Empty Barbell</h2>
+      <ul class="barbell-list"></ul>
+      <div class="ui">
+        <select name="exercise">
+          <option>Squat</option>
+          <option>Deadlift</option>
+          <option>Overhead Press</option>
+          <option>Bench Press</option>
+        </select>
+        <br/>
+        <button class="reset ui-btn blue">Reset</button>
+        <button class="save ui-btn green">Save Set</button>
+      </div>
+      <table class="log"></table>
+      <div class="ui">
+        <a href="#" class="manage-link" id="clear">Clear Log</a>
+        <a href="#" class="manage-link" id="download">Download Log</a>
+      </div>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
