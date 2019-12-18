@@ -58,8 +58,8 @@ const logSort = (a, b) => {
 const updateOutput = () => {
   output.innerText = totalWeight(counts) + ' lbs';
   log.innerHTML = '';
-  Object.entries(db).forEach(tuple => {
-    let [ ldate, logs ] = tuple;
+  Object.keys(db).sort().reverse().forEach(ldate => {
+    let logs = db[ldate];
     if (logs.length === 0) return;
 
     // Add table header for date
